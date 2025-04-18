@@ -1,0 +1,15 @@
+.container {
+  padding: 20px;
+}
+
+.payment-info {
+  margin-bottom: 20px;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  background-color: #07c160;
+  color: #fff;
+  border-radius: 4px;
+}

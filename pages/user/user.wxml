@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="user-info">
+    <image src="{{userInfo.avatarUrl}}" mode="aspectFill"></image>
+    <text>{{userInfo.nickname}}</text>
+  </view>
+  <view class="info-item">
+    <text>姓名：{{userInfo.realName}}</text>
+  </view>
+  <view class="info-item">
+    <text>手机号：{{userInfo.phone}}</text>
+  </view>
+  <view class="info-item">
+    <text>地址：{{userInfo.address}}</text>
+  </view>
+</view>

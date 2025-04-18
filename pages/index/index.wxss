@@ -1,0 +1,16 @@
+page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #07c160;
+  color: #fff;
+  border-radius: 4px;
+}

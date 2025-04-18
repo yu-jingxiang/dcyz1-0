@@ -1,0 +1,24 @@
+<view class="container">
+  <view class="section">
+    <text>用户列表</text>
+    <view class="list">
+      <block wx:for="{{users}}" wx:key="_id">
+        <view class="item">
+          <text>{{item.nickname}}</text>
+          <text>注册时间：{{item.createdAt}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="section">
+    <text>支付记录</text>
+    <view class="list">
+      <block wx:for="{{payments}}" wx:key="_id">
+        <view class="item">
+          <text>金额：{{item.amount}}分</text>
+          <text>状态：{{item.status}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

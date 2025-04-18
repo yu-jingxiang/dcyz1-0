@@ -1,0 +1,7 @@
+<view class="container">
+  <view class="payment-info">
+    <text>支付金额：{{amount}}分</text>
+    <text>支付描述：{{description}}</text>
+  </view>
+  <button bindtap="handlePayment">立即支付</button>
+</view>
