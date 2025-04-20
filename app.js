@@ -12,7 +12,7 @@ App({
     // 初始化云开发环境
     wx.cloud.init({
       // 云环境ID
-      env: 'cloud1-1g5h1x4gedf32b2d',
+      env: '你申请的云数据库环境',
       // 追踪用户
       traceUser: true
     })
