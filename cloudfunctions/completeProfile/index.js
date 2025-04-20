@@ -26,7 +26,8 @@ exports.main = async (event, context) => {
           realName, // 真实姓名
           phone,   // 联系电话
           address, // 联系地址
-          updatedAt: _.set(db.serverDate()) // 设置更新时间
+          updatedAt: db.serverDate() ,// 设置更新时间
+          profileComplete:true
         }
       })
       
@@ -40,13 +41,16 @@ exports.main = async (event, context) => {
           phone,     // 联系电话
           address,   // 联系地址
           createdAt: db.serverDate(), // 创建时间
-          updatedAt: db.serverDate()  // 更新时间
+          updatedAt: db.serverDate(),  // 更新时间
+          profileComplete:true
         }
       })
     }
     
     // 返回成功结果
-    return { success: true }
+    return { success: true,
+      code:200
+     }
   } catch (error) {
     // 捕获并记录错误
     console.error('completeProfile error:', error)

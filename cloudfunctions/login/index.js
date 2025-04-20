@@ -46,13 +46,13 @@ console.log('数据库连接测试:', testDB)
         updatedAt: db.serverDate(),
         profileComplete: false // 标记用户资料是否完善
       }
-    })
+      })
   }
 
   // 返回用户信息
   return {
     openid,
-    isRegistered: user.data.length > 0,
+    isRegistered:true,
     profileComplete: user.data.length > 0 ? user.data[0].profileComplete : false
   }
   

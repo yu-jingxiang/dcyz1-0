@@ -19,10 +19,10 @@ Page({
           })
           console.log('云函数返回:', result)
           
-          if (result.result.isRegistered) {
-            wx.navigateTo({ url: '/pages/user/completeProfile' })
+          if (result && result.result && result.result.isRegistered && !result.result.profileComplete) {
+            wx.switchTab({ url: '/pages/completedProfile/completedProfile' })
           } else {
-            wx.navigateTo({ url: '/pages/user/user' })
+            wx.switchTab({ url: '/pages/user/user' })
           }
         } catch (error) {
           console.error('云函数调用失败:', error)

@@ -1,8 +1,5 @@
 <view class="container">
-  <view class="user-info">
-    <image src="{{userInfo.avatarUrl}}" mode="aspectFill"></image>
-    <text>{{userInfo.nickname}}</text>
-  </view>
+  
   <view class="info-item">
     <text>姓名：{{userInfo.realName}}</text>
   </view>
